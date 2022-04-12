@@ -3,26 +3,15 @@
     <div class="header">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+          <router-link :to="{ name: 'home' }">Home</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <router-link :to="{ name: 'product' }">Product</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-            >Disabled</a
-          >
+          <router-link :to="{ name: 'register' }">Register</router-link>
         </li>
       </ul>
     </div>
   </header>
 </template>
-
-<style scoped>
-    .header {
-        background: whitesmoke;
-    }
-</style>
